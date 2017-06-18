@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 import './style.css';
 
-export default class About extends Component {
+export default class NotFound extends Component {
   // static propTypes = {}
   // static defaultProps = {}
   // state = {}
@@ -11,9 +11,9 @@ export default class About extends Component {
   render() {
     const { className, ...props } = this.props;
     return (
-      <div className={classnames('About', className)} {...props}>
+      <div className={classnames('NotFound', className)} {...props}>
         <h1>
-          About
+          404 <small>Not Found :(</small>
         </h1>
       </div>
     );
