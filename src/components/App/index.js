@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import { Link } from 'react-router-dom'
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -10,7 +12,7 @@ class App extends Component {
       <div className={classnames('App', className)} {...props}>
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2><Link to="/about">Will Match</Link></h2>
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
