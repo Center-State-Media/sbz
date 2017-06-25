@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React from 'react';
+// import classNames from 'classnames';
 
 import './style.css';
 
-export default class ContactUs extends Component {
-
-  render() {
-    const { className, ...props } = this.props;
-    return (
-      <div className={classnames('About', className)} {...props}>
-        <h1>
-          About
-        </h1>
-      </div>
-    );
-  }
+export default function ContactUs(className) {
+  return (
+    <div>
+      <h1>
+        ContactUs
+      </h1>
+    </div>
+  )
 }
