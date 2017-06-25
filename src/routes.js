@@ -11,18 +11,35 @@ import Map from './components/Map';
 import Strains from './components/Strains';
 import ContactUs from './components/ContactUs';
 import NotFound from './components/NotFound';
+import NavBar from './components/NavBar';
 
 const Routes = (props) => (
   <Router {...props}>
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/map" component={Map} />
-      <Route path="/strains" component={Strains} />
-      <Route path="/contact-us" component={ContactUs} />
-      <Route component={NotFound} />
-    </Switch>
+    <div>
+      <NavBar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/map" component={Map} />
+        <Route path="/strains" component={Strains} />
+        <Route path="/contact-us" component={ContactUs} />
+        <Route component={NotFound} />
+      </Switch>
+    </div>
   </Router>
 );
+
+/*
+<Router {...props}>
+  <Switch>
+    <Route path="/" exact component={Home} />
+    <Route path="/about" component={About} />
+    <Route path="/map" component={Map} />
+    <Route path="/strains" component={Strains} />
+    <Route path="/contact-us" component={ContactUs} />
+    <Route component={NotFound} />
+  </Switch>
+</Router>
+*/
 
 export default Routes;
