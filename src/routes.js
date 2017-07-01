@@ -11,6 +11,7 @@ import Map from './components/Map';
 import Strains from './components/Strains';
 import ContactUs from './components/ContactUs';
 import NotFound from './components/NotFound';
+import AgeCheck from './components/AgeCheck';
 import NavBar from './components/NavBar';
 
 const Routes = (props) => (
@@ -18,7 +19,8 @@ const Routes = (props) => (
     <div>
       <NavBar />
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={AgeCheck} />
+        <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/map" component={Map} />
         <Route path="/strains" component={Strains} />
