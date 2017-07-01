@@ -25,5 +25,3 @@ export default function AgeCheck() {
     </div>
   )
 }
-
-<li><Link to="/">Home</Link></li>

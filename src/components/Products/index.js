@@ -3,11 +3,11 @@ import React from 'react';
 
 import './style.css';
 
-export default function Strains() {
+export default function Products() {
   return (
     <div>
       <h1>
-        Strains
+        Products
       </h1>
     </div>
   )

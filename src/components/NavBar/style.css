@@ -1,0 +1,26 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbarBrandContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbarLinksContainer {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.welcomeGreeting {
+  color: blue;
+}

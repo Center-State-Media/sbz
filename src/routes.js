@@ -8,11 +8,13 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import Map from './components/Map';
-import Strains from './components/Strains';
+import Products from './components/Products';
 import ContactUs from './components/ContactUs';
 import NotFound from './components/NotFound';
 import AgeCheck from './components/AgeCheck';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+
 
 const Routes = (props) => (
   <Router {...props}>
@@ -23,10 +25,11 @@ const Routes = (props) => (
         <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/map" component={Map} />
-        <Route path="/strains" component={Strains} />
+        <Route path="/products" component={Products} />
         <Route path="/contact-us" component={ContactUs} />
         <Route component={NotFound} />
       </Switch>
+      {/*<Footer />*/}
     </div>
   </Router>
 );
