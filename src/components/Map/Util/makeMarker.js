@@ -1,4 +1,3 @@
-import React from 'react';
 import makeInfoContent from './makeInfoContent';
 
 export default (lat, lng, title, googleAddress, displayAddress, phoneNumber, hours, website) => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import makeMarker from '../Util/makeMarker';
 import './stores.css';
 
