@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Responsive from 'react-responsive';
+import Logo from '../../assets/FullSizeRender.png'
 
 import './style.css';
 
@@ -13,9 +14,12 @@ export default function NavBar(props) {
     return (
       <div className='navbarContainer'>
         <div className='navbarBrandContainer'>
-          <h1>
-            Brand
-          </h1>
+          <Default>
+            <img src={Logo} alt='Sticky Budz' height='100px' className='defaultLogo'/>
+          </Default>
+          <Mobile>
+            <img src={Logo} alt='Sticky Budz' height='50px'className='mobileLogo'/>
+          </Mobile>
         </div>
         <nav className='navbarLinksOuterContainer'>
           <Default>

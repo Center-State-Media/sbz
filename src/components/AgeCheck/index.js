@@ -7,10 +7,10 @@ import './style.css';
 export default function AgeCheck() {
   return (
     <div className="container">
-      <h1 className="welcomeGreeting">
+      <h1>
         Are you 21+ years old?
       </h1>
-      <div>
+      <div className="optionsContainer">
         <h2>
           <Link to="/home">
             Yes

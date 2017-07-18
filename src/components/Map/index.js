@@ -76,10 +76,10 @@ export default class Map extends Component {
       <div>
         <SBZGoogleMap
           containerElement={
-            <div style={{ height: 400, width: '100vw' }} />
+            <div style={{ height: '35vw', width: '100vw' }} />
           }
           mapElement={
-            <div style={{ height: 400, width: '100vw' }} />
+            <div style={{ height: '35vw', width: '100vw' }} />
           }
           onMapLoad={this.handleMapLoad}
           markers={this.state.markers}

@@ -5,6 +5,14 @@
   flex-direction: column;
 }
 
-.test {
-  color: blue;
+.storeTitle {
+  font-weight: bold;
+}
+
+.link {
+  color: purple;
+}
+
+.hours {
+  font-weight: lighter;
 }
