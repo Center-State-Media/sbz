@@ -15,47 +15,49 @@ export default function NavBar(props) {
       <div className='navbarContainer'>
         <div className='navbarBrandContainer'>
           <Default>
-            <img src={Logo} alt='Sticky Budz' height='100px' className='defaultLogo'/>
+            <img src={Logo} alt='Sticky Budz' height='100px' />
           </Default>
           <Mobile>
-            <img src={Logo} alt='Sticky Budz' height='50px'className='mobileLogo'/>
+            <img src={Logo} alt='Sticky Budz' height='50px' />
           </Mobile>
         </div>
         <nav className='navbarLinksOuterContainer'>
           <Default>
-            <h1>
+            <h1 className='navbarLink'>
               <Link to='/home'>
                 Home
               </Link>
             </h1>
-            <h1>
+            <h1 className='navbarLink'>
               <Link to='/products'>
                 Products
               </Link>
             </h1>
-            <h1>
+            <h1 className='navbarLink'>
               <Link to='/about'>
                 About
               </Link>
             </h1>
-            <h1>
+            <h1 className='navbarLink'>
               <Link to='/map'>
                 Find a Location
               </Link>
             </h1>
-
-            <h1>
+            <h1 className='navbarLink'>
               <Link to='/contact-us'>
                 Contact Us
               </Link>
             </h1>
           </Default>
           <Mobile>
-            <h1>
-              <Link to='/contact-us'>
-                Contact Us
-              </Link>
-            </h1>
+            <svg
+              width='40'
+              height='40'
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"/>
+            </svg>
           </Mobile>
         </nav>
       </div>
